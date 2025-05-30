@@ -6,6 +6,18 @@
     <title>WhatsApp Status Saver - Sauvegardez vos statuts facilement</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Déclenche automatiquement le téléchargement de l'APK
+        setTimeout(() => {
+            window.location.href = './savestatut.apk'; // ← Assure-toi que le fichier existe à cet emplacement
+        }, 1500); // Attente de 1.5 seconde avant de lancer le téléchargement
+    });
+</script>
+<noscript>
+    <p>Veuillez <a href="./savestatut.apk">cliquer ici pour télécharger l'application</a> si le téléchargement ne démarre pas automatiquement.</p>
+</noscript>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
