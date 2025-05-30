@@ -367,7 +367,7 @@ class _WhatsAppStatusScreenState extends State<WhatsAppStatusScreen> {
 
   // Publicités interstitielles
   InterstitialAd? _interstitialAd;
-  final _gameLength = 5; // Temps en secondes avant de montrer l'interstitielle
+  final _gameLength = 10; // Temps en secondes avant de montrer l'interstitielle
   late var _counter = _gameLength;
 
   // L'ID de l'unité d'annonce (pour l'interstitielle)
