@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Status Saver - Sauvegardez vos statuts facilement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-full shadow-md hover:bg-gray-300 transition duration-300 ease-in-out;
+        }
+        .feature-card {
+            @apply bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center;
+        }
+        .feature-icon {
+            @apply text-blue-500 text-5xl mb-4;
+        }
+        /* Style for the logo */
+        .app-logo {
+            width: 40px; /* Adjust size as needed */
+            height: 40px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 flex items-center">
+                <svg class="app-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="20" height="20" rx="4" fill="#25D366"/>
+                    <path d="M12 6V18M6 12H18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="8" stroke="white" stroke-width="2"/>
+                    <path d="M16 8L8 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                WhatsApp Status Saver
+            </a>
+            <div class="space-x-4">
+                <a href="#features" class="text-gray-600 hover:text-blue-600">Fonctionnalités</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-blue-600">Comment ça marche</a>
+                <a href="#download" class="btn-primary">Télécharger l'application</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Ne manquez plus jamais un statut WhatsApp !
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90">
+                    Sauvegardez et partagez facilement les photos et vidéos de statut de vos amis avec notre application intuitive.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#download" class="btn-primary" id="download-button-hero">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                        </svg>
+                        Télécharger sur Android
+                    </a>
+                    <a href="#features" class="btn-secondary">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://placehold.co/400x600/60A5FA/FFFFFF?text=App+Screenshot" alt="Capture d'écran de l'application WhatsApp Status Saver" class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Fonctionnalités clés
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <span class="feature-icon">📸</span>
+                    <h3 class="text-xl font-semibold mb-2">Sauvegarde d'images</h3>
+                    <p class="text-gray-600">
+                        Enregistrez instantanément les photos de statut directement dans votre galerie.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎥</span>
+                    <h3 class="text-xl font-semibold mb-2">Téléchargement de vidéos</h3>
+                    <p class="text-gray-600">
+                        Téléchargez les vidéos de statut en haute qualité pour les regarder hors ligne.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3 class="text-xl font-semibold mb-2">Facile et Rapide</h3>
+                    <p class="text-gray-600">
+                        Une interface utilisateur simple et intuitive pour une expérience sans tracas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                Comment ça marche ?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <div class="feature-icon">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Regardez les statuts</h3>
+                    <p class="text-gray-600">
+                        Visionnez les statuts sur WhatsApp comme d'habitude.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Ouvrez l'application</h3>
+                    <p class="text-gray-600">
+                        Lancez "WhatsApp Status Saver" pour voir les statuts disponibles.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Sauvegardez ou Partagez</h3>
+                    <p class="text-gray-600">
+                        Appuyez sur le bouton de téléchargement pour enregistrer ou partager.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="bg-blue-700 text-white py-16 md:py-24 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Prêt à sauvegarder vos statuts préférés ?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">
+                Téléchargez l'application dès maintenant et commencez à archiver vos moments.
+            </p>
+            <a href="#" class="btn-primary bg-white text-blue-700 hover:bg-gray-100" id="download-apk-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L9 5.414V17a1 1 0 102 0V5.414l5.293 5.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+                Télécharger l'APK (Android)
+            </a>
+            <p class="text-sm mt-4 opacity-75">
+                Compatible avec Android 5.0 (Lollipop) et versions ultérieures.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2025 WhatsApp Status Saver. Tous droits réservés.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a>
+                <a href="#" class="text-gray-400 hover:text-white">Conditions d'utilisation</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the download button element by its ID
+            const downloadButton = document.getElementById('download-apk-button');
+
+            // Simulate a click on the download button after a short delay
+            // A delay is added to ensure the page is fully rendered before the download attempt.
+            // This also gives the user a moment to see the page before a download prompt appears.
+            if (downloadButton) {
+                setTimeout(() => {
+                    // For security reasons, direct programmatic clicks on links that trigger downloads
+                    // might be blocked by browsers if not initiated by a direct user interaction.
+                    // The best practice is to provide a clear download link and let the user click it.
+                    // However, if you have a direct APK file and want to trigger a download,
+                    // you can set the window.location.href to the APK URL.
+                    // Replace 'your-app-name.apk' with the actual URL to your APK file.
+                    // For demonstration, we'll just log a message.
+                    // To actually trigger a download, uncomment the line below and replace the URL.
+
+                    // window.location.href = 'https://example.com/your-app-name.apk'; // Replace with your actual APK URL
+                    console.log('Tentative de téléchargement automatique de l\'APK...');
+                    // You might want to provide a user message here, e.g., "Your download will start shortly..."
+                }, 1500); // 1.5 second delay
+            }
+        });
+    </script>
+
+</body>
+</html>
