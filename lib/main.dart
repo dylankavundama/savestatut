@@ -63,7 +63,7 @@ class _WhatsAppStatusScreenState extends State<WhatsAppStatusScreen> {
   @override
   void initState() {
     super.initState();
-    // _startNewGame();
+    _startNewGame();
     _initializeData();
   }
 
@@ -199,8 +199,8 @@ class _WhatsAppStatusScreenState extends State<WhatsAppStatusScreen> {
 
   /// Saves the given media file (video or image) to the gallery.
   Future<void> _saveMedia(File file) async {
+      _startNewGame();
     try {
-          _startNewGame();
       final isVideo = file.path.endsWith('.mp4');
       bool? success;
 
@@ -225,14 +225,14 @@ class _WhatsAppStatusScreenState extends State<WhatsAppStatusScreen> {
       }
     }
 
-
+    _startNewGame();
   }
 
   /// Initializes and plays the given video file using Chewie.
   void _playVideo(File file) {
     _videoController?.dispose();
     _chewieController?.dispose();
-    _startNewGame();
+
     _videoController = VideoPlayerController.file(file)
       ..initialize().then((_) {
         if (mounted) {
@@ -535,6 +535,7 @@ class _WhatsAppStatusScreenState extends State<WhatsAppStatusScreen> {
                             final file = _imageFiles[index];
                             return GestureDetector(
                               onTap: () => showDialog(
+                              
                                 context: context,
                                 builder: (context) => Dialog(
                                   backgroundColor: Colors.black, // Dark background for images

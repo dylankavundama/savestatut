@@ -13,7 +13,7 @@
     <application
     
         android:requestLegacyExternalStorage="true"  
-        android:label="WhatsaApp Savevideo"
+        android:label="Save Status"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
       <meta-data
